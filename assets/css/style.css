@@ -29,16 +29,30 @@ body {
 
 
 header {
+    
     background-color: #ffffff;
     padding: 0 1rem;
     position:fixed;
     z-index:99;
     width:100%;
-    box-shadow:0 2px 2px #3a3a3a 
+    box-shadow:0 2px 2px #3a3a3a;
+    display:flex; 
+    justify-content:space-between;
+    align-items: baseline;
 }
 
+/* Nav toggle */
+#nav-toggle:checked~nav{
+    display:block;
+}
 
+#nav-toggle{
+    display: none;
+}
 
+.nav-toggle-label{
+    font-size:2rem;
+}
 header a {
     text-decoration: none;
     color: inherit;
@@ -64,10 +78,8 @@ h1{
 }
 
 .active{
-    margin-left: auto;
     border-bottom: 1px solid #3a3a3a;
-    width: 100%;
-    box-shadow: ;
+    
 }
 
 /* Navbar styles with dropdown toggle */
@@ -75,7 +87,12 @@ h1{
 nav {
     position:absolute;
     background-color: #ffffff;
-    box-shadow:0 2px 2px #3a3a3a 
+    width: 100%;
+    left: 0;
+    box-shadow:0 2px 2px #3a3a3a;
+    padding: 0 1rem;
+    display: none;
+    top: 100%;
 }
 
 /* Main content */
@@ -83,6 +100,7 @@ main{
     background: lightblue;
     /*  make main element take any excess space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
