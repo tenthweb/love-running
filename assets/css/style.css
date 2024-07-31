@@ -188,7 +188,7 @@ main {
 #times h3{
     /* Override h3 styles */
     color:#fafafa;
-    background-color: rgba(0,0,0 0.6);
+
 
 }
 
@@ -258,7 +258,7 @@ main {
     border-radius: 2px;
     background-color: #454b1b;
     color: #fafafa;
-    font: size 100%;
+    font-size: 100%;
     padding: 15px 32px 15px;
 
 
